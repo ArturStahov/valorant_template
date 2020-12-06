@@ -3,3 +3,4 @@
 - webpack;
 - sass;
 - BEM
+- tsparticles

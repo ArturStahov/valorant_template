@@ -51,6 +51,7 @@
   "dependencies": {
     "@csstools/normalize.css": "^11.0.1",
     "core-js": "^3.8.0",
-    "handlebars": "^4.7.6"
+    "handlebars": "^4.7.6",
+    "tsparticles": "^1.18.11"
   }
 }

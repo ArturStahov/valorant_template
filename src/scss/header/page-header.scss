@@ -1,9 +1,10 @@
 .page-header {
+  position: relative;
   padding-top: 45px;
   padding-bottom: 45px;
   max-width: 1250px;
   margin: 0 auto;
-  background-color: $header-color;
+  background-color: transparent;
   box-shadow: 20px -11px 29px -2px rgba(0, 0, 0, 0.51);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -39,7 +40,7 @@
   transition-property: color;
   transition-duration: 0.4s;
   &:hover {
-    color: rgb(255, 70, 86);
+    color: rgb(241, 168, 10);
   }
 }
 .page-nav-list {
