@@ -1,104 +1,31 @@
 import '@csstools/normalize.css';
 import './scss/main.scss'
-
+import { options } from './js/anim-fon/animationFon'
 import { tsParticles } from "tsparticles";
 
-tsParticles.load("tsparticles", {
-    fpsLimit: 60,
-    particles: {
-        number: {
-            value: 0,
-            density: {
-                enable: true,
-                value_area: 800
-            }
-        },
-        color: {
-            value: "#ffff00",
-            animation: {
-                enable: true,
-                speed: -70,
-                sync: true
-            }
-        },
-        shape: {
-            type: "circle"
-        },
-        opacity: {
-            value: 1,
-            random: false,
-            animation: {
-                enable: true,
-                speed: 0.5,
-                minimumValue: 0,
-                sync: false
-            }
-        },
-        size: {
-            value: 8,
-            random: { enable: true, minimumValue: 4 },
-            animation: {
-                enable: false,
-                speed: 20,
-                minimumValue: 4,
-                sync: false
-            }
-        },
-        life: {
-            duration: {
-                value: 2
-            },
-            count: 1
-        },
-        move: {
-            enable: true,
-            gravity: {
-                enable: true,
-                acceleration: -0.5
-            },
-            speed: 2,
-            direction: "top",
-            random: false,
-            straight: false,
-            outModes: {
-                default: "destroy",
-                bottom: "none"
-            },
-            attract: {
-                enable: true,
-                distance: 300,
-                rotate: {
-                    x: 600,
-                    y: 1200
-                }
-            }
-        }
-    },
-    interactivity: {
-        detectsOn: "canvas",
-        events: {
-            resize: true
-        }
-    },
-    detectRetina: true,
-    background: {
-        color: "transparent"
-    },
-    emitters: {
-        direction: "top",
-        rate: {
-            quantity: 8,
-            delay: 0.01
-        },
-        size: {
-            width: 100,
-            height: 10
-        },
-        position: {
-            x: 50,
-            y: 100
-        }
-    }
+tsParticles.load("tsparticles", options);
+
+
+let div1 = document.querySelector('.parallacs-div-one');
+window.addEventListener('mousemove', function (e) {
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;
+    div1.style.transform = 'translate(-' + x * 80 + 'px, -' + y * 80 + 'px)';
 });
+let div2 = document.querySelector('.parallacs-div-two');
+window.addEventListener('mousemove', function (e) {
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;
+    div2.style.transform = 'translate(-' + x * 150 + 'px, -' + y * 150 + 'px)';
+});
+let div3 = document.querySelector('.parallacs-div-three');
+window.addEventListener('mousemove', function (e) {
+    let x = e.clientX / window.innerWidth;
+    let y = e.clientY / window.innerHeight;
+    div3.style.transform = 'translate(-' + x * 60 + 'px, -' + y * 60 + 'px)';
+});
+
+
+
 
 
