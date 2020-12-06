@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: $first-font;
+
+  padding: 303px 0;
+  background: url('../images/bg-image/Ellipse_big_red.png') no-repeat top
+      left/60%,
+    url('../images/bg-image/Ellipse_little-red.png') no-repeat top 8% right 9%/2%,
+    url('../images/bg-image/Ellipse_fff_right.png') no-repeat top 15% right 3%/12%,
+    url('../images/bg-image/Ellipse_grey_right.png') no-repeat top 27% right 2%/5%,
+    url('../images/bg-image/Ellipse_bottom_right_big.png') no-repeat bottom
+      right / 50%,
+    url('../images/bg-image/Ellipse_bottom_left_fff.png') no-repeat bottom left
+      5%/15%,
+    url('../images/bg-image/Ellipse_bottom_left_grey.png') no-repeat bottom 10%
+      left 3%/5% $body-color;
+}
+
+.container {
+  margin: 0 auto;
+  @media screen and (max-width: $mobile-bp-max) {
+    // width: 100%;
+    width: $mobile-w-min;
+  }
+  @media screen and (min-width: $tablet-bp-min) {
+    width: $tablet-w;
+  }
+  @media screen and (min-width: $desktop-bp-min) {
+    width: $desktop-w;
+  }
+}

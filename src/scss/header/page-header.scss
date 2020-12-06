@@ -1,0 +1,48 @@
+.page-header {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  max-width: 1250px;
+  margin: 0 auto;
+  background-color: $header-color;
+  box-shadow: 20px -11px 29px -2px rgba(0, 0, 0, 0.51);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.company-logo {
+  margin-right: 30px;
+  border-right: 2px solid #fff;
+  padding-right: 30px;
+}
+.logo {
+  margin-right: 20px;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-nav {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-nav__item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.page-nav__link {
+  @include font-settings(0.875rem, 17px, 600, $nav-font-color);
+  text-transform: uppercase;
+  transition-property: color;
+  transition-duration: 0.4s;
+  &:hover {
+    color: rgb(255, 70, 86);
+  }
+}
+.page-nav-list {
+  display: flex;
+  justify-content: flex-start;
+}

@@ -1,0 +1,66 @@
+.section-skill-info {
+  position: relative;
+}
+
+.skill-info-list {
+  position: absolute;
+  bottom: -300px;
+  left: -70px;
+  display: flex;
+  justify-content: flex-start;
+}
+.skill-info-item {
+  width: 325px;
+  position: relative;
+  padding: 20px;
+  background-color: $skill-info-item;
+  border: 2px solid #000000;
+  border-top-left-radius: 1rem;
+  &__title {
+    @include font-settings(2.2rem, 1.2, 900, $section-skill-info-title);
+    font-family: $second-font;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__sub-title {
+    @include font-settings(1rem, 1.2, 600, #000000);
+    font-family: $second-font;
+    margin-bottom: 15px;
+  }
+  &__desc {
+    max-width: 150px;
+    @include font-settings(0.6rem, 1.2, 400, #1f2326);
+  }
+  &__icons-block {
+    width: 80px;
+    height: 85px;
+    position: absolute;
+    bottom: 0px;
+    right: 36px;
+    background-color: rgb(255, 70, 86);
+  }
+  &__icon {
+    width: 80px;
+    height: 85px;
+    transform: translate(24px, -27px);
+  }
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.button-slider-cntrl {
+  width: 150px;
+  height: 167px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 86px;
+  bottom: -300px;
+  background-color: $skill-info-item;
+  border: 2px solid #000000;
+  border-top-left-radius: 1rem;
+  cursor: pointer;
+}

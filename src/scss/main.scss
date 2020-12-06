@@ -1,0 +1,15 @@
+@import './helpers/variables';
+@import './helpers/mixins';
+@import './fonts';
+@import './base';
+
+//header
+
+@import './header/page-header';
+
+//main
+@import './main/page-main';
+@import './main/section-agents';
+@import './main/section-skill-info';
+//footer
+@import './footer/footer';
