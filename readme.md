@@ -4,4 +4,4 @@
 - sass;
 - BEM
 - tsparticles
-Preview : https://arturstahov.github.io/valorant_template/
+### Preview : https://arturstahov.github.io/valorant_template/
